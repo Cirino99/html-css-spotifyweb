@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+}
 
 /* main */
 main {
@@ -16,20 +23,69 @@ main aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* debug */
-    background-color: antiquewhite;
+    background-color: #000000;
 }
 main aside .nav {
     width: 100%;
-    height: 60%;
-    /* debug */
-    background-color: goldenrod;
+    height: calc(100vh - 180px);
+    padding-top: 20px;
+}
+main aside .nav a {
+    color: #717171;
+}
+main aside .nav .items a,  main aside .nav .logo{
+    display: flex;
+    align-items: center;
+}
+main aside .nav .logo {
+    margin-bottom: 20px;
+    padding-left: 20px; 
+}
+main aside .nav .logo img{
+    width: 65%;
+    height: auto;
+}
+main aside .nav .items {
+    font-weight: 600;
+    padding: 6px 20px;
+    font-size: 0.9rem;
+}
+
+main aside .nav .items a i {
+    color: #a3a3a3;
+    font-size: 1.3rem;
+    padding-right: 15px;
+}
+main aside .nav .items h4 {
+    color: white;
+    padding-top: 20px;
+    font-size: 1.1rem;
+}
+main aside .nav .items a .add {
+    font-size: 2.5rem;
+}
+main aside .nav .items a h5 {
+    font-size: 1.05rem;
+}
+main aside .nav #lista-playlist {
+    overflow: auto;
+}
+main aside .nav #lista-playlist ul li {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;   
+}
+main aside .nav .active {
+    border-left: solid 4px #adff2f;
+    padding-left: 16px;
+    color: white;
+}
+main aside .nav .active i {
+    color: #d2d2d2;
 }
 main aside #profilo {
     width: 100%;
     height: 80px;
-    /* debug */
-    background-color: yellow;
 }
 
     /* zona centrale */
