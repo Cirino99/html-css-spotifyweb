@@ -3,3 +3,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* main */
+main {
+    display: flex;
+}
+main aside {
+    width: 300px;
+    height: calc(100vh - 100px);
+    /* debug */
+    background-color: antiquewhite;
+}
+main section {
+    width: calc(100% - 300px);
+    height: calc(100vh - 100px);
+    /* debug */
+    background-color: aqua;
+}
+main section #upgrade {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 300px);
+    height: 100px;
+    /* debug */
+    background-color: blue;
+}
+
+/* control */
+#control {
+    height: 100px;
+    width: 100%;
+    /* debug */
+    background-color: brown;
+}
