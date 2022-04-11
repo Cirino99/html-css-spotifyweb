@@ -18,7 +18,7 @@ main {
 
     /* barra laterale */
 main aside {
-    width: 300px;
+    width: 250px;
     height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
@@ -30,10 +30,10 @@ main aside .nav {
     height: calc(100vh - 180px);
     padding-top: 20px;
 }
-main aside .nav a {
+main aside a {
     color: #717171;
 }
-main aside .nav .items a,  main aside .nav .logo{
+main aside .items a,  main aside .nav .logo{
     display: flex;
     align-items: center;
 }
@@ -45,13 +45,13 @@ main aside .nav .logo img{
     width: 65%;
     height: auto;
 }
-main aside .nav .items {
+main aside .items {
     font-weight: 600;
     padding: 6px 20px;
     font-size: 0.9rem;
 }
 
-main aside .nav .items a i {
+main aside .items a i {
     color: #a3a3a3;
     font-size: 1.3rem;
     padding-right: 15px;
@@ -69,6 +69,8 @@ main aside .nav .items a h5 {
 }
 main aside .nav #lista-playlist {
     overflow: auto;
+    max-height: 252px;
+    height: 48%;
 }
 main aside .nav #lista-playlist ul li {
     padding: 8px 20px;
@@ -86,11 +88,26 @@ main aside .nav .active i {
 main aside #profilo {
     width: 100%;
     height: 80px;
+    padding: 6px 20px;
+    background-color: #000000;
+}
+main aside #profilo .items {
+    padding: 7px 0;
+}
+main aside #profilo .utente {
+    padding-top: 10px;
+    border-top: solid 1px #717171;
+}
+main aside #profilo .utente a {
+    color: white;
+}
+main aside #profilo .utente a i {
+    font-size: 1.5rem;
 }
 
     /* zona centrale */
 main section {
-    width: calc(100% - 300px);
+    width: calc(100% - 250px);
     height: calc(100vh - 100px);
     /* debug */
     background-color: aqua;
@@ -99,7 +116,7 @@ main section #upgrade {
     position: fixed;
     top: 0;
     right: 0;
-    width: calc(100% - 300px);
+    width: calc(100% - 250px);
     height: 100px;
     /* debug */
     background-color: blue;
