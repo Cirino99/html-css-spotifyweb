@@ -34,6 +34,7 @@ main aside .nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    overflow: hidden;
 }
 main aside a {
     color: #717171;
@@ -121,9 +122,12 @@ main aside #profilo .utente a i {
 main section {
     width: calc(100% - 250px);
     height: calc(100vh - 100px);
-    padding-top: 120px;
+    padding-top: 100px;
     background-color: #141922;
     overflow: auto;
+}
+main section nav {
+    margin-top: 20px;
 }
 main section nav ul{
     display: flex;
@@ -183,7 +187,6 @@ main section #upgrade {
     justify-content: space-between;
     padding: 0 20px;
     background-color: #282828;
-    position: relative;
 }
 #control .colsx {
     display: flex;
