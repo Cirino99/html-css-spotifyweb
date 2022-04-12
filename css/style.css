@@ -26,6 +26,7 @@ main aside {
     flex-direction: column;
     justify-content: space-between;
     background-color: #000000;
+    overflow: hidden;
 }
 main aside .nav {
     width: 100%;
@@ -34,7 +35,6 @@ main aside .nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    overflow: hidden;
 }
 main aside a {
     color: #717171;
