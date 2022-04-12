@@ -111,8 +111,49 @@ main aside #profilo .utente a i {
 main section {
     width: calc(100% - 250px);
     height: calc(100vh - 100px);
-    /* debug */
-    background-color: aqua;
+    padding-top: 120px;
+    background-color: #141922;
+}
+main section nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+main section nav ul li {
+    position: relative;
+    padding: 0 10px;
+}
+main section nav ul li a {
+    color: #7b7e82;
+    font-weight: 600;
+}
+main section nav ul li .select-nav {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 40px;
+    height: 3px;
+    background-color: #adff2f;
+}
+main section nav ul li #select-nav2, main section nav ul li #select-nav3, main section nav ul li #select-nav4, main section nav ul li #select-nav5, main section nav ul li #select-nav6 {
+    display: none;
+}
+main section nav ul #nav-list2:hover #select-nav2{
+    display: block;
+}
+main section nav ul #nav-list3:hover #select-nav3{
+    display: block;
+}
+main section nav ul #nav-list4:hover #select-nav4{
+    display: block;
+}
+main section nav ul #nav-list5:hover #select-nav5{
+    display: block;
+}
+main section nav ul #nav-list6:hover #select-nav6{
+    display: block;
 }
 main section #upgrade {
     position: fixed;
@@ -164,7 +205,7 @@ main section #upgrade {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 40%;
+    width: 30%;
 }
 #control .col-center #gestione-brano {
     font-size: 1.2rem;
