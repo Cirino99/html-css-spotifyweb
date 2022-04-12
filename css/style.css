@@ -133,28 +133,29 @@ main section #upgrade {
     padding: 0 20px;
     background-color: #282828;
 }
-#control .col {
+#control .colsx {
     display: flex;
     color: white;
     align-items: center;
+    width: 20%;
 }
-#control .col img{
-    width: 60px;
-    height: 60px;
+#control .colsx img{
+    width: 50px;
+    height: 50px;
 }
-#control .col .nome-brano {
+#control .colsx .nome-brano {
     margin-left: 10px;
     font-size: 0.9rem;
 }
-#control .col .nome-brano span {
+#control .colsx .nome-brano span {
     font-size: 0.7rem;
     color: #a3a3a3;
     font-weight: 500;
 }
-#control .col #preferita {
+#control .colsx #preferita {
     margin-left: 30px;
 }
-#control .col #preferita a {
+#control .colsx #preferita a {
     padding: 0 4px;
     color: #a3a3a3;
 }
@@ -167,13 +168,13 @@ main section #upgrade {
 }
 #control .col-center #gestione-brano {
     font-size: 1.2rem;
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#control .col-center #gestione-brano i {
+#control .col-center #gestione-brano a i {
     padding: 0 8px;
+    color: white;
 }
 #control .col-center #gestione-brano .play {
     padding: 0 10px;
@@ -196,6 +197,29 @@ main section #upgrade {
     margin: 0 10px;
 }
 #control .col-center #time #total-time #current-time {
+    width: 20%;
+    height: 4px;
+    background-color: #c1c1c1;
+    border-radius: 4px;
+}
+#control .coldx{
+    display: flex;
+    color: white;
+    align-items: center;
+    width: 15%;
+}
+#control .coldx a i {
+    padding: 0 5px;
+    color: white;
+}
+#control .coldx #total-volume {
+    height: 4px;
+    width: 85%;
+    background-color: #5a5a5a;
+    border-radius: 4px;
+    margin: 0 10px;
+}
+#control .coldx #total-volume #current-volume {
     width: 20%;
     height: 4px;
     background-color: #c1c1c1;
