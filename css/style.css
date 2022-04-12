@@ -27,7 +27,7 @@ main aside {
 }
 main aside .nav {
     width: 100%;
-    height: calc(100vh - 180px);
+    height: calc(100% - 80px);
     padding-top: 20px;
 }
 main aside a {
@@ -46,7 +46,7 @@ main aside .nav .logo img{
     height: auto;
 }
 main aside .items {
-    font-weight: 600;
+    font-weight: 500;
     padding: 6px 20px;
     font-size: 0.9rem;
 }
@@ -69,20 +69,22 @@ main aside .nav .items a h5 {
 }
 main aside .nav #lista-playlist {
     overflow: auto;
-    max-height: 252px;
+    /* max-height: 240px; */
     height: 48%;
 }
 main aside .nav #lista-playlist ul li {
     padding: 8px 20px;
     font-size: 0.9rem;
-    font-weight: 600;   
+    font-weight: 500;   
 }
 main aside .nav .active {
     border-left: solid 4px #adff2f;
     padding-left: 16px;
+}
+main aside .nav .active a {
     color: white;
 }
-main aside .nav .active i {
+main aside .nav .active a i {
     color: #d2d2d2;
 }
 main aside #profilo {
@@ -126,6 +128,33 @@ main section #upgrade {
 #control {
     height: 100px;
     width: 100%;
-    /* debug */
-    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #282828;
+}
+#control .col {
+    display: flex;
+    color: white;
+    align-items: center;
+}
+#control .col img{
+    width: 60px;
+    height: 60px;
+}
+#control .col .nome-brano {
+    margin-left: 10px;
+    font-size: 0.9rem;
+}
+#control .col .nome-brano span {
+    font-size: 0.7rem;
+    color: #a3a3a3;
+    font-weight: 500;
+}
+#control .col #preferita {
+    color: #a3a3a3;
+    margin-left: 30px;
+}
+#control .col #preferita i {
+    padding: 0 4px;
 }
