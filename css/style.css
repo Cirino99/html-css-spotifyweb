@@ -169,6 +169,40 @@ main section nav ul #nav-list5:hover #select-nav5{
 main section nav ul #nav-list6:hover #select-nav6{
     display: block;
 }
+main section .box-album {
+    margin: 30px  20px;
+}
+main section .box-album h2 {
+    color: white;
+    padding-bottom: 5px;
+}
+main section .list-album {
+    display: flex;
+    gap: 2%;
+    margin-top: 30px;
+}
+main section .list-album .album {
+    width: 15%;
+    text-align: center;
+}
+main section .list-album .album img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+main section .list-album .circle img {
+    border-radius: 50%;
+}
+main section .box-album h3 {
+    color: white;
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+}
+main section .box-album span {
+    color: #717171;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
 main section #upgrade {
     position: fixed;
     top: 0;
