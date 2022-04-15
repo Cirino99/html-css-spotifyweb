@@ -14,14 +14,14 @@ a {
 /* main */
 main {
     display: flex;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     width: 100%;
 }
 
     /* barra laterale */
 main aside {
-    width: 250px;
-    height: calc(100vh - 100px);
+    width: 220px;
+    height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -76,7 +76,8 @@ main aside .nav .items a .add {
     font-size: 2.5rem;
 }
 main aside .nav .items a h5 {
-    font-size: 1.05rem;
+    font-size: 1rem;
+    font-weight: 600;
 }
 main aside .nav #lista-playlist {
     width: 100%;
@@ -120,8 +121,8 @@ main aside #profilo .utente a i {
 
     /* zona centrale */
 main section {
-    width: calc(100% - 250px);
-    height: calc(100vh - 100px);
+    width: calc(100% - 220px);
+    height: calc(100vh - 80px);
     padding-top: 100px;
     background-color: #141922;
     overflow: auto;
@@ -209,8 +210,8 @@ main section #upgrade {
     align-items: center;
     top: 0;
     right: 0;
-    width: calc(100% - 250px);
-    height: 100px;
+    width: calc(100% - 220px);
+    height: 80px;
     justify-content: flex-end;
     background-color: #080b12;
 }
@@ -218,8 +219,8 @@ main section #upgrade #button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    width: 250px;
+    height: 40px;
+    width: 240px;
     color: white;
     border: solid 1px white;
     border-radius: 30px;
@@ -228,7 +229,7 @@ main section #upgrade #button {
 
 /* control */
 #control {
-    height: 100px;
+    height: 80px;
     width: 100%;
     display: flex;
     justify-content: space-between;
