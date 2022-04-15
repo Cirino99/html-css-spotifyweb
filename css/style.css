@@ -5,7 +5,7 @@
 }
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
 }
 a {
     text-decoration: none;
@@ -205,12 +205,25 @@ main section .box-album span {
 }
 main section #upgrade {
     position: fixed;
+    display: flex;
+    align-items: center;
     top: 0;
     right: 0;
     width: calc(100% - 250px);
     height: 100px;
-    /* debug */
-    background-color: blue;
+    justify-content: flex-end;
+    background-color: #080b12;
+}
+main section #upgrade #button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 250px;
+    color: white;
+    border: solid 1px white;
+    border-radius: 30px;
+    margin-right: 10px;
 }
 
 /* control */
