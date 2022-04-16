@@ -42,14 +42,15 @@ main aside a {
 main aside .nav .logo {
     width: 100%;
     height: auto;
+    margin-bottom: 20px;
+    padding-left: 20px; 
+}
+main aside .nav .logo-small {
+    display: none;
 }
 main aside .items a,  main aside .nav .logo{
     display: flex;
     align-items: center;
-}
-main aside .nav .logo {
-    margin-bottom: 20px;
-    padding-left: 20px; 
 }
 main aside .nav .logo img{
     width: 65%;
@@ -60,6 +61,9 @@ main aside .items {
     padding: 6px 20px;
     font-size: 0.9rem;
     width: 100%;
+}
+main aside .items-small {
+    display: none;
 }
 
 main aside .items a i {
@@ -112,7 +116,7 @@ main aside #profilo .utente {
     padding-top: 10px;
     border-top: solid 1px #717171;
 }
-main aside #profilo .utente a {
+main aside #profilo .utente a strong{
     color: white;
 }
 main aside #profilo .utente a i {
@@ -123,7 +127,7 @@ main aside #profilo .utente a i {
 main section {
     width: calc(100% - 220px);
     height: calc(100vh - 80px);
-    padding-top: 100px;
+    padding-top: 80px;
     background-color: #141922;
     overflow: auto;
 }
@@ -181,11 +185,12 @@ main section .box-album h2 {
 main section .list-album {
     display: flex;
     gap: 2%;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 main section .list-album .album {
     width: 15%;
     text-align: center;
+    margin-top: 10px;
 }
 main section .list-album .album img {
     width: 100%;
@@ -214,7 +219,8 @@ main section #upgrade {
     width: calc(100% - 220px);
     height: 80px;
     justify-content: flex-end;
-    background-color: #080b12;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
 }
 main section #upgrade #button {
     display: flex;
@@ -293,6 +299,7 @@ main section #upgrade #button {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    min-width: 160px;
     margin-top: 10px;
     color: white;
     font-size: 0.7rem;
@@ -334,8 +341,18 @@ main section #upgrade #button {
     border-radius: 4px;
 }
 
-/* versione schermo dimensione medio */
+/* versione schermo di media dimensione */
 @media screen and (max-width: 1000px){
+    main section .list-album {
+        flex-wrap: wrap;
+    }
+    main section .list-album .album {
+        width: 23%;
+    }
+}
+
+/* versione schermo di piccola dimensione */
+@media screen and (max-width: 700px){
     main section .list-album {
         display: flex;
         gap: 2%;
@@ -343,7 +360,68 @@ main section #upgrade #button {
         flex-wrap: wrap;
     }
     main section .list-album .album {
-        width: 23%;
+        width: 49%;
         text-align: center;
+    }
+}
+
+/* versione schermo di molto piccola dimensione */
+@media screen and (max-width: 550px){
+    main aside .nav .logo, main aside .items, main aside .nav #lista-playlist {
+        display: none;
+    }
+    main aside {
+        width: 50px;
+        height: calc(100vh - 80px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #000000;
+        overflow: hidden;
+    }
+    main section {
+        width: calc(100% - 50px);
+    }
+    main section #upgrade {
+        width: calc(100% - 50px);
+    }
+    main aside .nav {
+        padding-top: 10px;
+    }
+    main aside .nav .logo-small {
+        display: flex;
+        width: 100%;
+        height: auto;
+        padding: 6px 5px;
+        justify-content: center;
+    }
+    main aside .nav .logo-small img {
+        width: calc(100% - 10px);
+        height: auto;
+    }
+    main aside .items-small {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        padding: 6px 5px;
+    }
+    main aside .nav .items-small i {
+        font-size: 1.5rem;
+    }
+    #control {
+        padding: 0 5px;
+    }
+    #control .colsx {
+        min-width: 90px;
+    }
+    #control .colsx img {
+        display: none;
+    }
+    #control .colsx #preferita {
+        margin-left: 5px;
+    }
+    #control .coldx {
+        min-width: 120px;
     }
 }
