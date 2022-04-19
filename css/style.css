@@ -186,16 +186,37 @@ main section .list-album {
     display: flex;
     gap: 2%;
     margin-top: 20px;
+    align-items: flex-start;
 }
 main section .list-album .album {
     width: 15%;
     text-align: center;
     margin-top: 10px;
 }
-main section .list-album .album img {
+main section .list-album .album .img-album {
+    position: relative;
+}
+main section .list-album .album .img-album img {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
+}
+main section .list-album .album .img-album .play-album {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+main section .list-album .album .img-album .play-album i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.3rem;
 }
 main section .list-album .circle img {
     border-radius: 50%;
@@ -427,4 +448,39 @@ main section #upgrade #button {
     #control .coldx {
         min-width: 120px;
     }
+}
+
+/* hover */
+main section .list-album .album:hover {
+    cursor: pointer;
+}
+main section .list-album #album1 .img-album:hover .play-album {
+    display: block;
+}
+main section .list-album #album2 .img-album:hover .play-album {
+    display: block;
+}
+main section .list-album #album3 .img-album:hover .play-album {
+    display: block;
+}
+main section .list-album #album4 .img-album:hover .play-album {
+    display: block;
+}
+main section .list-album #album5 .img-album:hover .play-album {
+    display: block;
+}
+main section .list-album #album6 .img-album:hover .play-album {
+    display: block;
+}
+main section .list-album #album7 .img-album:hover .play-album {
+    display: block;
+}
+main section .list-album #album8 .img-album:hover .play-album {
+    display: block;
+}
+main section .list-album #album9 .img-album:hover .play-album {
+    display: block;
+}
+main section .list-album #album10 .img-album:hover .play-album {
+    display: block;
 }
