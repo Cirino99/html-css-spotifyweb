@@ -57,9 +57,9 @@ main aside .nav .logo img{
     height: auto;
 }
 main aside .items {
-    font-weight: 500;
+    font-weight: 600;
     padding: 6px 20px;
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
     width: 100%;
 }
 main aside .items-small {
@@ -91,7 +91,7 @@ main aside .nav #lista-playlist {
 main aside .nav #lista-playlist ul li {
     padding: 8px 20px;
     font-size: 0.9rem;
-    font-weight: 500;   
+    font-weight: 600;   
 }
 main aside .nav .active {
     border-left: solid 4px #adff2f;
@@ -214,6 +214,7 @@ main section .box-album span {
     font-size: 0.8rem;
     font-weight: 500;
 }
+    /* barra in alto */
 main section #upgrade {
     position: fixed;
     display: flex;
@@ -434,19 +435,37 @@ main section #upgrade #button {
 }
 
 /* hover */
-main section nav ul #nav-list2:hover #select-nav2{
+main section nav ul #nav-list1:hover a {
+    color: white;
+}
+main section nav ul #nav-list2:hover a {
+    color: white;
+}
+main section nav ul #nav-list3:hover a {
+    color: white;
+}
+main section nav ul #nav-list4:hover a {
+    color: white;
+}
+main section nav ul #nav-list5:hover a {
+    color: white;
+}
+main section nav ul #nav-list6:hover a {
+    color: white;
+}
+main section nav ul #nav-list2:hover #select-nav2 {
     display: block;
 }
-main section nav ul #nav-list3:hover #select-nav3{
+main section nav ul #nav-list3:hover #select-nav3 {
     display: block;
 }
-main section nav ul #nav-list4:hover #select-nav4{
+main section nav ul #nav-list4:hover #select-nav4 {
     display: block;
 }
-main section nav ul #nav-list5:hover #select-nav5{
+main section nav ul #nav-list5:hover #select-nav5 {
     display: block;
 }
-main section nav ul #nav-list6:hover #select-nav6{
+main section nav ul #nav-list6:hover #select-nav6 {
     display: block;
 }
 main section .list-album .album:hover {
@@ -481,4 +500,51 @@ main section .list-album #album9 .img-album:hover .play-album {
 }
 main section .list-album #album10 .img-album:hover .play-album {
     display: flex;
+}
+main section #upgrade #button:hover {
+    height: 50px;
+    width: 260px;
+}
+main aside #items1:hover a, main aside #items1:hover a i {
+    color: white;
+}
+main aside #items2:hover a, main aside #items2:hover a i {
+    color: white;
+}
+main aside #items3:hover a, main aside #items3:hover a i {
+    color: white;
+}
+main aside #items4:hover a, main aside #items4:hover a i {
+    color: white;
+}
+main aside #items5:hover a, main aside #items5:hover a i {
+    color: white;
+}
+main aside #items6:hover a, main aside #items6:hover a i {
+    color: white;
+}
+main aside #items7:hover a, main aside #items7:hover a i {
+    color: white;
+    cursor: text;
+}
+main aside .nav #lista-playlist ul li:nth-child(1):hover a {
+    color: white;
+}
+main aside .nav #lista-playlist ul li:nth-child(2):hover a {
+    color: white;
+}
+main aside .nav #lista-playlist ul li:nth-child(3):hover a {
+    color: white;
+}
+main aside .nav #lista-playlist ul li:nth-child(4):hover a {
+    color: white;
+}
+main aside .nav #lista-playlist ul li:nth-child(5):hover a {
+    color: white;
+}
+main aside .nav #lista-playlist ul li:nth-child(6):hover a {
+    color: white;
+}
+main aside .nav #lista-playlist ul li:nth-child(7):hover a {
+    color: white;
 }
