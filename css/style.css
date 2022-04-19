@@ -160,21 +160,6 @@ main section nav ul li .select-nav {
 main section nav ul li #select-nav2, main section nav ul li #select-nav3, main section nav ul li #select-nav4, main section nav ul li #select-nav5, main section nav ul li #select-nav6 {
     display: none;
 }
-main section nav ul #nav-list2:hover #select-nav2{
-    display: block;
-}
-main section nav ul #nav-list3:hover #select-nav3{
-    display: block;
-}
-main section nav ul #nav-list4:hover #select-nav4{
-    display: block;
-}
-main section nav ul #nav-list5:hover #select-nav5{
-    display: block;
-}
-main section nav ul #nav-list6:hover #select-nav6{
-    display: block;
-}
 main section .box-album {
     margin: 30px  20px;
 }
@@ -205,16 +190,14 @@ main section .list-album .album .img-album .play-album {
     position: absolute;
     top: 0;
     left: 0;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     display: none;
 }
 main section .list-album .album .img-album .play-album i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: white;
     font-size: 2.3rem;
 }
@@ -451,36 +434,51 @@ main section #upgrade #button {
 }
 
 /* hover */
+main section nav ul #nav-list2:hover #select-nav2{
+    display: block;
+}
+main section nav ul #nav-list3:hover #select-nav3{
+    display: block;
+}
+main section nav ul #nav-list4:hover #select-nav4{
+    display: block;
+}
+main section nav ul #nav-list5:hover #select-nav5{
+    display: block;
+}
+main section nav ul #nav-list6:hover #select-nav6{
+    display: block;
+}
 main section .list-album .album:hover {
     cursor: pointer;
 }
 main section .list-album #album1 .img-album:hover .play-album {
-    display: block;
+    display: flex;
 }
 main section .list-album #album2 .img-album:hover .play-album {
-    display: block;
+    display: flex;
 }
 main section .list-album #album3 .img-album:hover .play-album {
-    display: block;
+    display: flex;
 }
 main section .list-album #album4 .img-album:hover .play-album {
-    display: block;
+    display: flex;
 }
 main section .list-album #album5 .img-album:hover .play-album {
-    display: block;
+    display: flex;
 }
 main section .list-album #album6 .img-album:hover .play-album {
-    display: block;
+    display: flex;
 }
 main section .list-album #album7 .img-album:hover .play-album {
-    display: block;
+    display: flex;
 }
 main section .list-album #album8 .img-album:hover .play-album {
-    display: block;
+    display: flex;
 }
 main section .list-album #album9 .img-album:hover .play-album {
-    display: block;
+    display: flex;
 }
 main section .list-album #album10 .img-album:hover .play-album {
-    display: block;
+    display: flex;
 }
