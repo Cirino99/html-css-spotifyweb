@@ -278,6 +278,9 @@ main section #upgrade #button {
 #control .colsx #preferita a {
     color: #a3a3a3;
 }
+#control .colsx #preferita a i {
+    font-size: 1.1rem;
+}
 #control .col-center {
     display: flex;
     justify-content: center;
@@ -567,6 +570,17 @@ main aside .nav #lista-playlist ul li:nth-child(6):hover a {
 }
 main aside .nav #lista-playlist ul li:nth-child(7):hover a {
     color: white;
+}
+#control .colsx .nome-brano span:hover {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#control .colsx #preferita a:hover {
+    color: white;
+}
+#control .col-center #gestione-brano .play:hover {
+    transform: scale(1.1);
 }
 #control .col-center #time #total-time:hover {
     cursor: pointer;
