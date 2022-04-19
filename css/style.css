@@ -321,6 +321,16 @@ main section #upgrade #button {
     height: 4px;
     background-color: #c1c1c1;
     border-radius: 4px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#control .col-center #time #total-time #current-time #point-time {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: white;
+    display: none;
 }
 #control .coldx{
     display: flex;
@@ -340,10 +350,20 @@ main section #upgrade #button {
     border-radius: 4px;
 }
 #control .coldx #total-volume #current-volume {
-    width: 20%;
+    width: 35%;
     height: 4px;
     background-color: #c1c1c1;
     border-radius: 4px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#control .coldx #total-volume #current-volume #point-volume {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: white;
+    display: none;
 }
 
 /* versione schermo di media dimensione */
@@ -453,7 +473,7 @@ main section nav ul #nav-list5:hover a {
 main section nav ul #nav-list6:hover a {
     color: white;
 }
-main section nav ul #nav-list2:hover #select-nav2 {
+/* main section nav ul #nav-list2:hover #select-nav2 {
     display: block;
 }
 main section nav ul #nav-list3:hover #select-nav3 {
@@ -467,7 +487,7 @@ main section nav ul #nav-list5:hover #select-nav5 {
 }
 main section nav ul #nav-list6:hover #select-nav6 {
     display: block;
-}
+} */
 main section .list-album .album:hover {
     cursor: pointer;
 }
@@ -547,4 +567,22 @@ main aside .nav #lista-playlist ul li:nth-child(6):hover a {
 }
 main aside .nav #lista-playlist ul li:nth-child(7):hover a {
     color: white;
+}
+#control .col-center #time #total-time:hover {
+    cursor: pointer;
+}
+#control .col-center #time #total-time:hover #current-time {
+    background-color: #adff2f;
+}
+#control .col-center #time #total-time:hover #current-time #point-time {
+    display: block;
+}
+#control .coldx #total-volume:hover {
+    cursor: pointer;
+}
+#control .coldx #total-volume:hover #current-volume {
+    background-color: #adff2f;
+}
+#control .coldx #total-volume:hover #current-volume #point-volume {
+    display: block;
 }
