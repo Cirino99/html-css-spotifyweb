@@ -248,7 +248,7 @@ main section #upgrade #button {
     color: white;
     align-items: center;
     width: 12%;
-    min-width: 140px;
+    min-width: 190px;
 }
 #control .colsx img{
     width: 45px;
@@ -268,9 +268,9 @@ main section #upgrade #button {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    gap: 5px 12px;
 }
 #control .colsx #preferita a {
-    padding: 0 4px;
     color: #a3a3a3;
 }
 #control .col-center {
@@ -362,6 +362,9 @@ main section #upgrade #button {
     main section .list-album .album {
         width: 49%;
         text-align: center;
+    }
+    #control .colsx {
+        min-width: 140px;
     }
 }
 
